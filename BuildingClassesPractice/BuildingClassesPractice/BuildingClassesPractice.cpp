@@ -15,7 +15,7 @@ public:
 	std::string name;
 	State state;
 	
-	
+	//added comments
 }
 
 int _tmain(int argc, _TCHAR* argv[])
