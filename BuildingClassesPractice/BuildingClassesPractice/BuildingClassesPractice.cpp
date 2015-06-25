@@ -10,20 +10,16 @@ public:
 		hungry,
 		pissedoff,
 		murderous,
-		horny
 	};
 	std::string name;
 	State state;
 	
 	//added comments
-}
+};
+
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-
-	Enemy daniel;
-
-	daniel.state = daniel.angry;
 
 	typedef enum LineComponent {
 		//a set of states that can be used
@@ -58,15 +54,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	std::ostringstream outputStream; 
 	outputStream << "circle" << "," << "CircleA" << "," << 1.3f << "," << -2.5f;
 	std::string builtCSVLine = outputStream.str();
-	
-
-
-
-
-
-
-
-
 
 	std::string name;
 	float radius;
@@ -75,18 +62,20 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	std::cout << "Enter the Name" << std::endl;
 	std::cin >> name;
-	//if (name == "circle"){
-		//std::cout << "Enter the Radius" << std::endl;
-		std::cin >> radius;
-		//std::cout << "You have a " << name << " with a Radius of " << radius << "." << std::endl;
-	}
+	if (name == "circle"){
+	std::cout << "Enter the Radius" << std::endl;
+	std::cin >> radius;
+		std::cout << "You have a " << name << " with a Radius of " << radius << "." << std::endl;
+	} else {
 	//if (name == "square"){
-	//std::cout << "Enter the length" << std::endl;
-	//std::cin >> length;
-	//std::cout << "Enter the width" << std::endl;
-	//std::cin >> width;
-	//std::cout << "You have a " << name << " with a Length of " << length << " and a Width of " << width << std::endl;
-//}
+	std::cout << "Enter the length" << std::endl;
+	std::cin >> length;
+	std::cout << "Enter the width" << std::endl;
+	std::cin >> width;
+	std::cout << "You have a " << name << " with a Length of " << length << " and a Width of " << width << std::endl;
+
+
+}
 	return 0;
 };
 
