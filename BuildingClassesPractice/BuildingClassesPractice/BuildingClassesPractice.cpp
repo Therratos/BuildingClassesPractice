@@ -2,6 +2,8 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <fstream>
+#include <vector>
 
 class Enemy {
 public:
@@ -60,23 +62,23 @@ int _tmain(int argc, _TCHAR* argv[])
 	float length;
 	float width;
 
-	std::cout << "Enter the Name" << std::endl;
+	std::cout << "Enter the Name Circle or Square" << std::endl;
 	std::cin >> name;
 	if (name == "circle"){
 	std::cout << "Enter the Radius" << std::endl;
 	std::cin >> radius;
 		std::cout << "You have a " << name << " with a Radius of " << radius << "." << std::endl;
-	} else {
-	//if (name == "square"){
-	std::cout << "Enter the length" << std::endl;
-	std::cin >> length;
-	std::cout << "Enter the width" << std::endl;
-	std::cin >> width;
-	std::cout << "You have a " << name << " with a Length of " << length << " and a Width of " << width << std::endl;
-
-
-}
+	}
+	else {
+		if (name == "square"){
+			std::cout << "Enter the length" << std::endl;
+			std::cin >> length;
+			std::cout << "Enter the width" << std::endl;
+			std::cin >> width;
+			std::cout << "You have a " << name << " with a Length of " << length << " and a Width of " << width << std::endl;
+		}
+	}
 	return 0;
-};
+}
 
 
